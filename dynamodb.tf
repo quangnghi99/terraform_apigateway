@@ -1,8 +1,8 @@
-resource "aws_dynamodb_table" "basic-dynamodb-table" {
+resource "aws_dynamodb_table" "student-db" {
   name           = "student"
   billing_mode   = "PROVISIONED"
-  read_capacity  = 20
-  write_capacity = 20
+  read_capacity  = 5
+  write_capacity = 5
   hash_key       = "id"
 
   attribute {

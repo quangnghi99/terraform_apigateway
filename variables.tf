@@ -12,7 +12,7 @@ variable "lambda_name" {
 
 variable "python_file" {
     type = list
-    default = ["get_function", "delete_funtion", "post_function","update_function"]
+    default = ["get_function", "delete_function", "post_function","update_function"]
 }
 variable "api_res_path"{
     type = string
