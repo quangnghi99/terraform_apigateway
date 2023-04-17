@@ -4,7 +4,7 @@ def lambda_handler(event, context):
    client = boto3.resource('dynamodb')
    table = client.Table('student')
    response = table.put_item(
-       Item={
+        Item={
            'id': event['id'],
            'Name': event['Name'],
            'Age': event['Age'],
